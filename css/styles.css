@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Mantiene el encabezado en la parte superior */
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+    z-index: 1000; /* Ajusta el índice z para superponer otros elementos */
+}
+
+/* Estilos generales para la sección de Stock */
+.stock {
+    padding: 20px;
+    text-align: center;
+}
+
+.stock h2 {
+    font-size: 24px;
+}
+
+.stock p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.stock-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 568px) {
+    header {
+        background-color: black; /* Fondo negro */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px; /* Espaciado interno */
+    }
+
+    .logo img {
+        width: 90px; /* Tamaño más pequeño para el logo */
+        margin-right: 13px;
+    }
+
+    .brand-name {
+        font-size: 33px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white; /* Texto blanco */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    }
+
+    .mobile-buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: row; /* Alineación horizontal */
+        justify-content: center; /* Centra horizontalmente los botones */
+    }
+
+    .button {
+        font-size: 1.1rem;
+        display: inline-block; /* Mostrar los botones en línea */
+        width: auto; /* Ajustar automáticamente el ancho */
+        margin: 10px; /* Espaciado entre botones */
+        padding: 7px;
+        background-color: #3033359f;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .stock {
+        margin-top: 15rem;
+        background-color: #f5f5f5;
+    }
+
+    .stock h2 {
+        font-size: 33px;
+        color: #333;
+    }
+
+    .stock p {
+        font-size: 22px;
+        color: #555;
+    }
+
+    .stock-button {
+        background-color: #40ce58;
+        color: white;
+    }
+
+    .stock-button:hover {
+        background-color: #29b954;
+    }
+
+    /* Estilos para la sección de las tarjetas */
+.cards-section {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título con sombras */
+.section-title {
+    font-size: 28px;
+    color: #333; /* Texto oscuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombras */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la imagen dentro de las tarjetas */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilos para el párrafo dentro de las tarjetas */
+.card-paragraph {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* Estilos para el botón "Ver Más" */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.whatsapp-icon img {
+    width: 60px; /* Tamaño del ícono de WhatsApp */
+    height: auto;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título con sombras */
+.section-title {
+    font-size: 28px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el párrafo sobre iWatch */
+.about-paragraph {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Estilos para el contenedor de tarjetas */
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img{
+    width: 9rem;
+}
+
+/* Estilos para los títulos de las tarjetas */
+.card-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Estilos para las descripciones de las tarjetas */
+.card-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card4 a {
+    text-decoration: none;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.map-button:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el cursor */
+}
+
+}
+    
+
+
+/* Estilos para pantallas más grandes (tabletas y escritorio) */
+@media (min-width: 769px) {
+    header {
+        background-color: black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .brand-name {
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .stock {
+        background-color: #fff; /* Fondo blanco */
+    }
+
+    .stock h2 {
+        color: #000; /* Texto negro */
+    }
+
+    .stock p {
+        color: #333; /* Texto gris oscuro */
+    }
+
+    .stock-button {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .stock-button:hover {
+        background-color: #2980b9;
+    }
+}
