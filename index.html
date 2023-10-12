@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css"> <!-- Enlaza tu archivo CSS -->
-    <title>Tu Página Web</title>
+    <title>iWatch</title>
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
             iWatch Official
         </div>
         <div class="mobile-buttons">
-            <button class="button">Home</button>
-            <button class="button">About Us</button>
+            <a href="/index.html" class="button">Home</a>
+            <a href="#about" class="button">About Us</a>
             <button class="button">Contact Us</button>
         </div>
     </header>
@@ -25,7 +25,7 @@
     <section class="stock">
         <h2>Nuestro Stock</h2>
         <p>Descubre nuestra amplia selección de productos disponibles en stock. Tenemos una variedad de productos de alta calidad para satisfacer tus necesidades.</p>
-        <a href="#" class="stock-button">Ver Stock</a>
+        <a href="https://docs.google.com/spreadsheets/d/1TkmlDIGNXnDVMVi6EtMermkOjR9mgay5SMCs3ERpmxE/edit" class="stock-button">Ver Stock</a>
     </section>
 
     <section class="cards-section">
@@ -55,31 +55,49 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <h2 class="section-title">Nosotros</h2>
         <p class="about-paragraph">En iWatch, nos apasiona la innovación tecnológica y la experiencia del usuario. Somos un equipo comprometido en ofrecerte los mejores productos y servicios relacionados con la tecnología wearable.</p>
         <div class="card-container">
             <div class="card">
-                <a href="https://wa.me/NUMERO_DE_TELEFONO" target="_blank"></a>
-                <img src="./imagenes/telephone-symbol-button.png" alt="Teléfono">
-                <p class="card-title">Atención al Cliente</p>
-                <p class="card-description">Siempre estamos disponibles para responder tus preguntas y brindarte el soporte que necesitas.</p>
+                <div class="card">
+                    <a href="https://wa.link/o8w9hx" target="_blank">
+                        <img src="./imagenes/telephone-symbol-button.png" alt="Teléfono">
+                        <p class="card-title">Atención al Cliente</p>
+                        <p class="card-description">Siempre estamos disponibles para responder tus preguntas y brindarte el soporte que necesitas las 24 horas todos los días. (Click Para Contactarnos)</p>
+                    </a>
+                </div>
             </div>
             <div class="card">
-                <a href="mailto:tu@email.com">
+                <a href="mailto:Iwatchok2@gmail.com" alt="Correo Electronico">
                 <img src="./imagenes/email.png" alt="Correo Electrónico">
                 <p class="card-title">Contacto por Correo</p>
-                <p class="card-description">Puedes ponerte en contacto con nosotros por correo electrónico para consultas y asistencia.</p>
+                <p class="card-description">Puedes ponerte en contacto con nosotros por correo electrónico
+                     para consultas y asistencia. (Click Ruta Al Mail)</p>
                 </a>
             </div>
             <div class="card">
                 <img src="./imagenes/gps.png" alt="Ubicación">
                 <p class="card-title">Visítanos</p>
                 <p class="card-description">Nuestra ubicación está abierta para recibirte y mostrarte nuestros productos en persona.</p>
-                <a href="https://www.google.com/maps" target="_blank" class="map-button">Ver Mapa</a>
+                <a href="./html/maps.html" target="_blank" class="map-button">Ver Mapa</a>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100095339657497&mibextid=LQQJ4d"><img src="./imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./imagenes/tik-tok.png" alt="TikTok"></a>
+            <a href="https://instagram.com/iwatch.ok?igshid=MmIzYWVlNDQ5Yg=="><img src="./imagenes/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="creator">
+            <p>Power By: Santiago Oliva</p>
+        </div>
+        <div class="company-info">
+            <p>@iWatch - Todos los derechos reservados</p>
+        </div>
+    </footer>
 
     <div class="whatsapp-icon">
         <a href="https://wa.me/NUMERODEWHATSAPP" target="_blank">
